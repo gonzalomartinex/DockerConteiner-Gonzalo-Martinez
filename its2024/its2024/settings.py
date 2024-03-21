@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'its2024.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'itsv',
-        'USER': 'root',
+        'NAME': 'itsv', 
+        'USER': 'itsv',
         'PASSWORD': 'password',
-        'HOST': 'itsv',    # Nombre del servicio de MySQL en Docker Compose
+        'HOST': 'db',    # Nombre del servicio de MySQL en Docker Compose
         'PORT': '3306',  # Puerto de MySQL
     }
 }

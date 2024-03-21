@@ -13,15 +13,15 @@ services:
       - app-network
 
   db:
-    image: mysql:5.7
+    image: mysql:latest
     restart: always
     environment:
       MYSQL_DATABASE: itsv
       MYSQL_USER: itsv
-      MYSQL_PASSWORD: itsv
+      MYSQL_PASSWORD: password
       MYSQL_ROOT_PASSWORD: password
     volumes:
-      - db-data:/var/lib/mysql
+      - ./db-data:/var/lib/mysql
     networks:
       - app-network
 
